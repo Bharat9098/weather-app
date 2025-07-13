@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=6e8be5d0c0e370395ccb0d11a34bd8e3&q=London
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 29 Mar 2023 15:21:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2650'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?q=london"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6IkxvbmRvbiIsImxvY2FsX25hbWVzIjp7ImphIjoi44Ot44Oz44OJ44OzIiwibXMiOiJMb25kb24iLCJlbCI6Is6bzr/Ovc60zq/Ovc6/IiwianYiOiJMb25kb24iLCJueSI6IkxvbmRvbiIsIml0IjoiTG9uZHJhIiwidGciOiLQm9C+0L3QtNC+0L0iLCJrayI6ItCb0L7QvdC00L7QvSIsInRyIjoiTG9uZHJhIiwiaXMiOiJMb25kb24iLCJzdSI6IkxvbmRvbiIsImZvIjoiTG9uZG9uIiwic2wiOiJMb25kb24iLCJhbSI6IuGIiOGKleGLsOGKlSIsImZyIjoiTG9uZHJlcyIsInRrIjoiTG9uZG9uIiwiZmYiOiJMb25kb24iLCJvcyI6ItCb0L7QvdC00L7QvSIsImVlIjoiTG9uZG9uIiwidWciOiLZhNmI2YbYr9uH2YYiLCJ3YSI6IkxvbmRlIiwidXIiOiLYudmE2KfZgtuBINmE2YbYr9mGIiwibm4iOiJMb25kb24iLCJhbiI6IkxvbmRyZXMiLCJtbiI6ItCb0L7QvdC00L7QvSIsImlkIjoiTG9uZG9uIiwiYWYiOiJMb25kZW4iLCJzdiI6IkxvbmRvbiIsIm5vIjoiTG9uZG9uIiwibHQiOiJMb25kb25hcyIsImlnIjoiTG9uZG9uIiwiY28iOiJMb25kcmEiLCJheSI6IkxvbmRvbiIsIm1rIjoi0JvQvtC90LTQvtC9IiwiZnkiOiJMb25kZW4iLCJiZSI6ItCb0L7QvdC00LDQvSIsImZlYXR1cmVfbmFtZSI6IkxvbmRvbiIsInRsIjoiTG9uZHJlcyIsImdsIjoiTG9uZHJlcyIsImZqIjoiTG9kb25pIiwibWkiOiJSxIFuYW5hIiwieWkiOiLXnNeQ16DXk9eQ158iLCJzYSI6IuCksuCkqOCljeCkoeCkqOCljSIsInRvIjoiTG9uaXRvbmkiLCJvciI6IuCssuCso+CtjeCsoeCsqCIsIm1yIjoi4KSy4KSC4KSh4KSoIiwia3YiOiLQm9C+0L3QtNC+0L0iLCJrbiI6IuCysuCyguCyoeCyqOCzjSIsInV6IjoiTG9uZG9uIiwiYXIiOiLZhNmG2K/ZhiIsImJnIjoi0JvQvtC90LTQvtC9IiwiaHQiOiJMb25uIiwic3EiOiJMb25kcmEiLCJ5byI6Ikzhu41uZOG7jW51IiwiYnMiOiJMb25kb24iLCJrbCI6IkxvbmRvbiIsImV1IjoiTG9uZHJlcyIsInBhIjoi4Kiy4Kmw4Kih4KioIiwiaW8iOiJMb25kb24iLCJ3byI6IkxvbmRhciIsImllIjoiTG9uZG9uIiwicm0iOiJMb25kcmEiLCJlbiI6IkxvbmRvbiIsIm1sIjoi4LSy4LSj4LWN4LSf4LW7Iiwib2MiOiJMb25kcmVzIiwibXkiOiLhgJzhgJThgLrhgJLhgJThgLrhgJnhgLzhgK3hgK/hgLciLCJtdCI6IkxvbmRyYSIsImFzY2lpIjoiTG9uZG9uIiwicnUiOiLQm9C+0L3QtNC+0L0iLCJrdyI6IkxvdW5kcmVzIiwic3QiOiJMb25kb24iLCJwcyI6ItmE2YbYr9mGIiwiZXQiOiJMb25kb24iLCJsYiI6IkxvbmRvbiIsImttIjoi4Z6h4Z674Z6E4Z6K4Z+NIiwiYmgiOiLgpLLgpILgpKbgpKgiLCJkZSI6IkxvbmRvbiIsIm5hIjoiTG9uZG9uIiwibHYiOiJMb25kb25hIiwiZ3YiOiJMdW5uaW4iLCJmaSI6IkxvbnRvbyIsImJtIjoiTG9uZG9uIiwic3IiOiLQm9C+0L3QtNC+0L0iLCJnYSI6IkxvbmRhaW4iLCJzaCI6IkxvbmRvbiIsImRhIjoiTG9uZG9uIiwidHQiOiLQm9C+0L3QtNC+0L0iLCJhYiI6ItCb0L7QvdC00L7QvSIsImhpIjoi4KSy4KSC4KSm4KSoIiwic24iOiJMb25kb24iLCJ6aCI6IuS8puaVpiIsImduIjoiTMOzbmR5cmUiLCJpYSI6IkxvbmRvbiIsImF2Ijoi0JvQvtC90LTQvtC9IiwiYXoiOiJMb25kb24iLCJlcyI6IkxvbmRyZXMiLCJoeSI6ItS81bjVttWk1bjVtiIsInBsIjoiTG9uZHluIiwiY2UiOiLQm9C+0L3QtNC+0L0iLCJiYSI6ItCb0L7QvdC00L7QvSIsImxvIjoi4Lql4Lqt4LqZ4LqU4Lqt4LqZIiwiYm8iOiLgvaPgvbzgvZPgvIvgvYrgvbzgvZPgvI0iLCJsaSI6IkxvbmRlIiwicm8iOiJMb25kcmEiLCJzYyI6IkxvbmRyYSIsInRhIjoi4K6H4K6y4K6j4K+N4K6f4K6p4K+NIiwicHQiOiJMb25kcmVzIiwiZ3UiOiLgqrLgqoLgqqHgqqgiLCJjcyI6IkxvbmTDvW4iLCJtZyI6IkzDtG5kw7RuYSIsInR3IjoiTG9uZG9uIiwibmwiOiJMb25kZW4iLCJrYSI6IuGDmuGDneGDnOGDk+GDneGDnOGDmCIsInNtIjoiTG9uZXRvbmEiLCJoZSI6Itec15XXoNeT15XXnyIsImh1IjoiTG9uZG9uIiwiY3kiOiJMbHVuZGFpbiIsImZhIjoi2YTZhtiv2YYiLCJoYSI6IkxhbmRhbiIsInVrIjoi0JvQvtC90LTQvtC9IiwiaHIiOiJMb25kb24iLCJvbSI6IkxhbmRhbiIsInF1IjoiTG9uZG9uIiwidGUiOiLgsLLgsILgsKHgsKjgsY0iLCJudiI6IlRvb2ggRGluZcq8w6kgQmlraW4gSGFhbMq8w6EiLCJiciI6IkxvbmRyZXoiLCJuZSI6IuCksuCkqOCljeCkoeCkqCIsInNvIjoiTG9uZG9uIiwic2QiOiLZhNmG2orZhiIsInRoIjoi4Lil4Lit4LiZ4LiU4Lit4LiZIiwia3UiOiJMb25kb24iLCJrbyI6IuufsOuNmCIsImxuIjoiTMOzbmTJm2zJmyIsInp1IjoiSUxvbmRvbiIsImN2Ijoi0JvQvtC90LTQvtC9Iiwic2siOiJMb25kw71uIiwiYm4iOiLgprLgpqjgp43gpqHgpqgiLCJ2aSI6Ikx1w6JuIMSQw7RuIiwidm8iOiJMb25kb24iLCJreSI6ItCb0L7QvdC00L7QvSIsImNhIjoiTG9uZHJlcyIsImdkIjoiTHVubmFpbm4iLCJzaSI6IuC2veC2seC3iuC2qeC2seC3iiIsImVvIjoiTG9uZG9ubyIsImJpIjoiTG9uZG9uIiwic3ciOiJMb25kb24iLCJzZSI6IkxvbmRvbiIsImN1Ijoi0JvQvtC90LTQvtC90YoifSwibGF0Ijo1MS41MDczMjE5LCJsb24iOi0wLjEyNzY0NzQsImNvdW50cnkiOiJHQiIsInN0YXRlIjoiRW5nbGFuZCJ9XQ==
+  recorded_at: Wed, 29 Mar 2023 15:21:27 GMT
+recorded_with: VCR 6.1.0

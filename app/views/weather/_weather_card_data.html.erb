@@ -1,0 +1,13 @@
+<% daily_data.map {|date, value| [date, value]}.each do |date, value| %>
+  <div class="wea_commonday">
+    <h4>
+      <%=  date.to_date %><br>
+    </h4>
+    <img src= <%= get_image_by_weather(value["weather"])%> alt="icon7">
+    <h6>
+      <%= "#{value["max_temp"]} &#8451; (Max)".html_safe %><br>
+      <%= "#{value["min_temp"]} &#8451; (Min)".html_safe %><br>
+      <%= "#{value["weather"]}" %>
+    </h6>
+  </div>
+<% end %>

@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/geo/1.0/direct?appid=6e8be5d0c0e370395ccb0d11a34bd8e3&q=New%20York
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Wed, 29 Mar 2023 15:21:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '707'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/geo/1.0/direct?q=new%20york"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sibmFtZSI6Ik5ldyBZb3JrIENvdW50eSIsImxvY2FsX25hbWVzIjp7ImlzIjoiTsO9amEgSsOzcnbDrWsiLCJiZSI6ItCd0YzRji3QgdGA0LoiLCJ0ZSI6IuCwqOCxjeCwr+CxguCwr+CxiuCwsOCxjeCwleCxjSIsIm9jIjoiTsOydmEgWW9yayIsIml0IjoiTmV3IFlvcmsiLCJlbiI6Ik5ldyBZb3JrIiwidmkiOiJOZXcgWW9yayIsImtvIjoi64m07JqVIiwiZmEiOiLZhtuM2YjbjNmI2LHaqSIsImRlIjoiTmV3IFlvcmsiLCJjYSI6Ik5vdmEgWW9yayIsImVzIjoiTnVldmEgWW9yayIsImtuIjoi4LKo4LON4LKv4LOC4LKv4LOK4LKw4LON4LKV4LONIiwiaGUiOiLXoNeZ15Ug15nXldeo16ciLCJwbCI6Ik5vd3kgSm9yayIsImFyIjoi2YbZitmI2YrZiNix2YMiLCJ6aCI6Iue6vee6pi/ntJDntIQiLCJ1ayI6ItCd0YzRji3QmdC+0YDQuiIsImZyIjoiTmV3IFlvcmsiLCJoaSI6IuCkqOCljeCkr+ClguCkr+CliuCksOCljeCkleCljSIsImVvIjoiTm92am9ya28iLCJjeSI6IkVmcm9nIE5ld3lkZCIsImdsIjoiTm92YSBZb3JrIiwicHQiOiJOb3ZhIElvcnF1ZSIsImNzIjoiTmV3IFlvcmsiLCJlbCI6Is6dzq3OsSDOpc+Mz4HOus63IiwiamEiOiLjg4vjg6Xjg7zjg6jjg7zjgq8iLCJydSI6ItCd0YzRji3QmdC+0YDQuiJ9LCJsYXQiOjQwLjcxMjcyODEsImxvbiI6LTc0LjAwNjAxNTIsImNvdW50cnkiOiJVUyIsInN0YXRlIjoiTmV3IFlvcmsifV0=
+  recorded_at: Wed, 29 Mar 2023 15:21:27 GMT
+recorded_with: VCR 6.1.0

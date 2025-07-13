@@ -1,0 +1,48 @@
+<div class="wea_list_heading">
+  <h4>
+    today
+  </h4>
+  <h5>
+    <%= Date.today.strftime('%d/%m/%Y %A') %>
+  </h5>
+</div>
+
+<div class="wea_list_rain">
+  <ul>
+    <li>
+      <p>Humidity</p>
+      <h3>
+        <%= "#{@respons["main"]["humidity"]}%" %>
+      </h3>
+    </li>
+    <li>
+      Weather
+      <h3>
+        <%= @respons["weather"][0]["description"] %>
+      </h3>
+    </li>
+    <li>
+      Cordinates
+      <h3>
+        <td><%= "Long: #{@respons["coord"]["lon"]} <br>  Lat: #{@respons["coord"]["lat"]}".html_safe %>
+      </h3>
+    </li>
+    <li>
+      City
+      <h3>
+        <td><%= "#{@respons["name"]}, (#{@respons["sys"]["country"]})" %>
+    </li>
+    <li>
+      Pressure
+      <h3>
+        <%= "#{@respons["main"]["pressure"]} hPa" %>
+      </h3>
+    </li>
+    <li>
+      Clouds
+      <h3>
+        <%= "#{@respons["clouds"]["all"]}%" %>
+      </h3>
+    </li>
+  </ul>
+</div>

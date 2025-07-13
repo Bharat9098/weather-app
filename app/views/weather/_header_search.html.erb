@@ -1,0 +1,23 @@
+<div class="wea_header_main_menus snipcss-2M5Zy">
+  <div class="wea_logo">
+    <a href="index.html">
+      <img src="https://kamleshyadav.com/templatemonster-html/weather/assets/images/logo.png" alt="logo">
+    </a>
+  </div>
+  
+  <div class="wea_main_menu main_menu_parent" style="margin-right: 40%;">
+    <div class="wed_nav_items main_menu_wrapper text-right wed_single_index_menu">
+      <ul>
+        <form class="form-inline my-2 my-lg-0" id="search-form" action="<%= weather_forecast_path %>" method="get">
+          <input class="form-control mr-sm-2" pattern="^[A-Za-z]+" title="Please enter alphabets only" id="search-input" name="city" value="" type="search" placeholder="Weather in your city" aria-label="Search" >
+
+          <button class="btn btn-outline-success my-2 my-sm-0" pattern="^[A-Za-z]+" title="Please enter alphabets only" id="example-button" type="submit">Search</button>
+        </form>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<% content_for :stylesheets do %>
+  <%= stylesheet_link_tag 'style' %>
+<% end %>  
